@@ -1,0 +1,36 @@
+@keyframes bounceIn {
+    0% {
+        top: -10%;
+    }
+    70% {
+        top: 50%;
+    }
+    80% {
+        top: 40%;
+    }
+    90% {
+        top: 50%;
+    }
+    100% {
+        top: -10%;
+    }
+
+
+}
+.dot-container {
+    height: 100vh;
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+
+.dot {
+    animation: bounceIn 5s cubic-bezier(1,0.8,0.8,1) 0s infinite normal forwards running;
+    background: #129881;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
