@@ -1,18 +1,18 @@
 @keyframes bounceIn {
     0% {
-        top: -10%;
+        top: -20%;
     }
-    70% {
+    25% {
         top: 50%;
     }
-    80% {
+    50% {
         top: 40%;
     }
-    90% {
+    75% {
         top: 50%;
     }
     100% {
-        top: -10%;
+        top: -20%;
     }
 
 
@@ -24,9 +24,23 @@
 /*    align-items: center;*/
 }
 
+
+/* animation: [name] [duration] [timing function] [delay]
+[iteration-count] [direction] [fill-mode] [play-state];
+*/
+/*cubic-bezier(.08,.59,.79,1.51)*/
 .dot {
-    animation: bounceIn 5s cubic-bezier(1,0.8,0.8,1) 0s infinite normal forwards running;
+    animation-name: bounceIn;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.08,.59,.73,1);
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
     background: #129881;
+
     height: 100px;
     width: 100px;
     border-radius: 50%;
