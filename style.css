@@ -1,22 +1,21 @@
 @keyframes bounceIn {
     0% {
-        top: -20%;
+        top: 0;
     }
     25% {
-        top: 50%;
+        top: 25%;
     }
     50% {
-        top: 40%;
+        top: 20%;
     }
-    75% {
-        top: 50%;
+    55% {
+        top: 25%;
     }
     100% {
-        top: -20%;
+        top: 0;
     }
-
-
 }
+
 .dot-container {
     height: 100vh;
 /*    display: flex;*/
@@ -31,7 +30,7 @@
 /*cubic-bezier(.08,.59,.79,1.51)*/
 .dot {
     animation-name: bounceIn;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-timing-function: cubic-bezier(.08,.59,.73,1);
     animation-delay: 0.4s;
     animation-iteration-count: infinite;
@@ -39,12 +38,33 @@
     animation-fill-mode: forwards;
     animation-play-state: running;
 
-    background: #129881;
-
+    background: #204C43;
+    margin:30px 30px 30px 30px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     position: relative;
     display: inline-block;
 }
+.dot:nth-child(2) {
+    animation-delay: 0.6s;
+    background: #5FB682;
+
+}
+.dot:nth-child(3) {
+    animation-delay: 0.8s;
+    background: #F7C244;
+
+}
+.dot:nth-child(4) {
+    animation-delay: 1s;
+    background: #F68623;
+
+}
+.dot:nth-child(5) {
+    animation-delay: 1.2s;
+    background: #DB2F24;
+
+}
+
 
