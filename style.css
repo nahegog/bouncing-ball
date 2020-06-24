@@ -31,7 +31,7 @@
 .dot {
     animation-name: bounceIn;
     animation-duration: 2.5s;
-    animation-timing-function: cubic-bezier(.08,.59,.73,1);
+    animation-timing-function: cubic-bezier(0, .6, .4, 1);
     animation-delay: 0.4s;
     animation-iteration-count: infinite;
     animation-direction: normal;
